@@ -1,0 +1,238 @@
+
+/* GENERAL */
+
+
+
+
+ul{
+list-style-type: none;
+padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    text-align: start;
+
+}
+
+
+
+
+/* HEADER */
+
+
+            /* BARRE DE NAVIGATION */
+
+
+nav{
+    height: 80px;
+    background: #FFDE03;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding: 0px 15px;
+}
+
+#liens a:hover{
+    background-color:#4A148C;
+    color: white;
+    padding: 29px 10px;
+}
+
+        /* IMAGE ET TITRE */
+
+
+#livres{
+    background: url(img/joining-the-library.jpg)no-repeat;
+    height: 460px;
+    position: relative;
+}
+
+header h1{
+    margin: 0px;
+}
+
+#rectangle{
+    color: white;
+    background-color: #1800B2;
+    font-size: 25px;
+    width: 450px;
+    position: absolute;
+    top: 309px;
+    right: 0px;
+    text-align: center;
+}
+
+
+
+/* SECTION CONTENU*/
+
+#contenu{
+    display: flex;
+}
+
+            /* SECTION MAIN */
+
+#main h1{
+    text-align: center;
+    font-size: 66px;
+    font-weight: normal;
+    padding-bottom: 60px;
+  
+}
+.border {
+    display: flex; /* passage en flexbox */
+    align-items: center; /* "center" permet que les traits soient au centre du texte. "flex-end" mettra les traits en bas */
+  }
+
+.border:before,
+.border:after { /* l'effet va donc s'appliquer "avant" et "après" le texte */
+    color: #C4C4C4; /* choisir la couleur du trait */
+    border-top: 5px solid; /* choisir le style et l'épaisseur du trait */
+    content: ""; /* nécessaire pour afficher les traits désirés */
+    flex: 1; /* permet de partager le reste de la largeur disponible */
+    margin: 15px; /* défini les espaces entre les traits et le texte */
+}
+
+#main{
+    flex: 4;
+    padding: 0px 85px;
+
+}
+#point{
+    text-align: center;
+}
+.points a{
+    font-size: 80px;
+    color: gray;
+}
+
+.points a:hover{
+    color: rgba(128, 128, 128, 0.37);
+}
+                    /* ARTICLE */
+article{
+    display: flex;
+    padding-bottom: 85px;
+
+}
+article h3{
+    border-bottom: black solid 1px;
+    padding-bottom: 15px;
+}
+                                    /* DESCRIPTION ARTICLE */
+#article1,#article3{
+    padding-left: 90px;
+
+}
+#article2{
+    padding-right: 90px;
+}
+#article2 h3{
+    display: flex;
+    justify-content: end;
+
+}
+.h1,.f1{
+    padding-right: 5px; 
+    width: 38px;
+    height: 38px;   
+}
+
+.h2,.f2{
+    padding-left: 5px;
+    width: 38px;
+    height: 38px;
+}
+                                    /* IMAGE ARTICLE */
+#image1,#image2,#image3{
+    border: black solid 1px;
+    width: 320px;
+    height: 245px;
+}
+#image1 img,#image3 img{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#image2 img{
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+
+
+            /* ASIDE */
+
+aside{
+    flex: 1;
+    color: white;
+    line-height: 50px;
+    font-family:Roboto, sans-serif;
+
+
+}
+aside ul{
+    margin: 0px;
+}
+aside a{
+    color: white;
+}
+aside h2{
+    margin: 0;
+    padding-bottom: 25px;
+    border-bottom: solid white 2px;
+    font-size: 30px;
+}
+#genre{
+    background-color: #2503FF;
+    padding: 60px 60px 30px 60px;
+}
+
+#auteurs{
+    background-color: #1800B2;
+    padding: 60px 60px 30px 60px;
+}
+
+
+
+
+
+
+/* FOOTER  */
+
+footer{
+    background-color: #E5E5E5;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3, footer p{
+    margin: 40px 0px 0px 0px;
+}
+footer p{
+
+margin: 0px 0px 30px 0px;
+}
+footer a{
+    padding-right: 10px;
+}
+#contact{
+    width: max-content ;
+
+}
+
+
